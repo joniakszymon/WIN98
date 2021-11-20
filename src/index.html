@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <title>My App</title>
+</head>
+<body>
+    <section class="screen">
+        <div class="files-container">
+            <div class="computer">
+                <img src="./images/computer.png" alt="mój komputer">
+                <p>My Computer</p>
+            </div>
+            <div class="trash">
+                <img src="./images/trash.png" alt="mój komputer">
+                <p>Recycle Bin</p>
+            </div>
+        </div>
+    </section>
+    <div class="mycomputer">
+        <div class="topbar">
+            <p>My Computer</p>
+            <div class="buttons">
+                <button class="minimalize">_</button>
+                <button class="enlarge">[]</button>
+                <button class="exit">X</button>
+            </div>
+        </div>
+        <div class="folders"></div>
+        <div class="bottom-part">
+            <div class="one">0 object(s)</div>
+            <div class="two"></div>
+            <div class="three">My Computer</div>
+        </div>
+    </div>
+    <div class="mydocuments">
+        <div class="topbar">
+            <p>Documents</p>
+            <div class="buttons">
+                <button class="minimalize">_</button>
+                <button class="enlarge">[]</button>
+                <button class="exit">X</button>
+            </div>
+        </div>
+        <div class="folders">
+            <div class="file">
+                <img src="./images/docs.png" alt="dokument" width="50" height="50" class="cv">
+                <p>Curriculum vitae</p>
+            </div>
+        </div>
+        <div class="bottom-part">
+            <div class="one">0 object(s)</div>
+            <div class="two"></div>
+            <div class="three">Documents</div>
+        </div>
+    </div>
+    <div class="myapplications">
+        <div class="topbar">
+            <p>Applications</p>
+            <div class="buttons">
+                <button class="minimalize">_</button>
+                <button class="enlarge">[]</button>
+                <button class="exit">X</button>
+            </div>
+        </div>
+        <div class="folders"></div>
+        <div class="bottom-part">
+            <div class="one">0 object(s)</div>
+            <div class="two"></div>
+            <div class="three">Applications</div>
+        </div>
+    </div>
+    <div class="mygames">
+        <div class="topbar">
+            <p>Games</p>
+            <div class="buttons">
+                <button class="minimalize">_</button>
+                <button class="enlarge">[]</button>
+                <button class="exit">X</button>
+            </div>
+        </div>
+        <div class="folders"></div>
+        <div class="bottom-part">
+            <div class="one">0 object(s)</div>
+            <div class="two"></div>
+            <div class="three">Games</div>
+        </div>
+    </div>
+    <div class="myimages">
+        <div class="topbar">
+            <p>Images</p>
+            <div class="buttons">
+                <button class="minimalize">_</button>
+                <button class="enlarge">[]</button>
+                <button class="exit">X</button>
+            </div>
+        </div>
+        <div class="folders"></div>
+        <div class="bottom-part">
+            <div class="one">0 object(s)</div>
+            <div class="two"></div>
+            <div class="three">Images</div>
+        </div>
+    </div>
+    <!-- pasek zadań -->
+    <nav id="nav" class="taskbar">
+        <div class="content-bar">
+            <div class="left-side">
+                <button class="start">
+                        <img src="./images/logo98.png" alt="logo windowsa 98" />
+                        <a class="start-btn" href="#">Start</a>
+                </button>
+                <div class="taskbar-list">
+                    <div class="left-strip"><p>Windows98</p></div>
+                    <div class="list">
+                        <ul>
+                            <li class="comput">
+                                <div class="img-text">
+                                    <div><img class="comp" src="./images/computer.png" alt="folder dokumenty"></div>
+                                    <div><a href="#">My Computer</a></div>
+                                </div>
+                            </li>
+                            <li class="documents">
+                                <div class="img-text">
+                                    <div><img src="./images/documents.png" alt="folder dokumenty"></div>
+                                    <div><a href="#">Documents</a></div>
+                                </div>
+                            </li>
+                            <li class="applications">
+                                <div class="img-text">
+                                    <div><img class="fold" src="./images/folder.png" alt="folder dokumenty"></div>
+                                    <div><a href="#">Applications</a></div>
+                                </div>
+                            </li>
+                            <li class="games">
+                                <div class="img-text">
+                                    <div><img class="fold" src="./images/folder.png" alt="folder dokumenty"></div>
+                                    <div><a href="#">Games</a></div>
+                                </div>
+                            </li>
+                            <li class="images">
+                                <div class="img-text">
+                                    <div><img class="fold" src="./images/folder.png" alt="folder dokumenty"></div>
+                                    <div><a href="#">Images</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-text">
+                                    <div><img class="fold" src="./images/explorer.ico" alt="folder dokumenty"></div>
+                                    <div><a href="#">Internet Explorer</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="data-panel">
+                    <div class="clock">
+                        <p class="time"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="./js/main.js"></script>
+</body>
+</html>

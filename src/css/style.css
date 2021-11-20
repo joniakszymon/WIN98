@@ -1,0 +1,269 @@
+:root {
+    --grey: rgb(126, 126, 126);
+}
+body {
+    background: #008689;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: -webkit-fill-available;
+    background-color: #D4D0C7;
+    border-top: 2px solid #afaca5;
+    box-shadow: -1px 0 3px #eeece6;
+}
+.content-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.start {
+    position: absolute;
+    width: 5%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #D4D0C7;
+    box-shadow: 1px 1px 3px black;
+    margin-left: 5px;
+    margin-top: 4px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+}
+.start-btn {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.start img {
+    position: relative;
+    height: 20px;
+    margin-right: 5px;
+}
+.data-panel {
+    background-color: #C0C0C0;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border-top: 2px solid var(--grey);
+    border-left: 2px solid var(--grey);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    /* box-shadow: -1px -1px 4px rgb(34, 33, 33); */
+}
+.data-panel p {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.files-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.files-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all .4s;
+}
+.files-container div p {
+    color: #fff;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.files-container div img {
+    width: 65px;
+    height: 65px;
+}
+.files-container div:focus {
+    background-color: rgba(18, 18, 206, 0.1);
+}
+.files-container div:hover {
+    background-color: rgba(18, 18, 206, 0.1);
+    border: 1px dashed rgb(0, 22, 148);
+}
+.taskbar-list {
+    visibility: hidden;
+    position: absolute;
+    top: -343px;
+    left: 0px;
+    width: 300px;
+    background-color: #afaca5;
+    border: 1px solid;
+    display: flex;
+}
+.show-taskbar {
+    visibility: visible;
+}
+.left-strip {
+    background: linear-gradient(#00007B 60%, #0000FF);
+    width: 30px;
+}
+.left-strip p {
+    transform: rotate(270deg);
+    position: relative;
+    bottom: -290px;
+    color: #fff;
+}
+.list {
+    width: -webkit-fill-available;
+}
+.taskbar-list .list ul li{
+    cursor: pointer;
+    list-style: none;
+    width: 100%;
+}
+.taskbar-list .list ul li:hover {
+    background-color: #00007B;
+}
+.taskbar-list .list ul li img {
+    width: 50px;
+
+}
+.list ul {
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+.img-text {
+    display: flex;
+    align-items: center;
+}
+.img-text:hover a {
+    color: #fff;
+}
+.fold {
+    height: 30px !important;
+    width: 35px !important;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.comp {
+    height: 40px !important;
+    width: 40px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.mycomputer,
+.mydocuments,
+.myimages,
+.mygames,
+.myapplications {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 60%;
+    border-top: 2px solid var(--grey);
+    border-left: 2px solid var(--grey);
+    border-right: 2px solid var(--grey);
+}
+.mycomputer .topbar,
+.mydocuments .topbar,
+.myapplications .topbar,
+.myimages .topbar,
+.mygames .topbar {
+    height: 30px;
+    border-bottom: 1px solid #DFDFDF;
+    background: linear-gradient(to right, #031A90 40%, #0E7FCD);
+}
+.topbar p {
+    margin: 0;
+    padding-top: 5px;
+    margin-left: 10px;
+    color: #fff;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.folders {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+    background: #fff;
+    width: -webkit-fill-available;
+    height: 89%;
+}
+.bottom-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 25px;
+    background: #C0C0C0;
+    border-top: #ebebeb;
+}
+.bottom-part div {
+    border-top: 2px solid var(--grey);
+    border-left: 2px solid var(--grey);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.one {
+    width: 40%;
+}
+.two {
+    width: 23%;
+    height: 18px;
+}
+.three {
+    width: 35%;
+}
+.topbar button {
+    cursor: pointer;
+}
+.exit-window {
+    display: block;
+}
+.full-wh {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    top: 0;
+    left: 0;
+}
+.file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    margin: 15px;
+    padding-top: 5px;
+    border: 1px solid transparent;
+    transition: all .4s;
+}
+.file:focus {
+    background-color: rgba(18, 18, 206, 0.1);
+}
+.file:hover {
+    background-color: rgba(18, 18, 206, 0.1);
+    border: 1px dashed rgb(0, 22, 148);
+}
